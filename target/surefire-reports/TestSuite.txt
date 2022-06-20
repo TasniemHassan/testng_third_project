@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 148.825 sec <<< FAILURE! - in TestSuite
+validateMainNavItems(scripts.CarvanaTest)  Time elapsed: 10.664 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Yousefs-MacBook-Pro.local', ip: 'fe80:0:0:0:8a6:5225:d782:6b0e%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.3.1', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/2g/ykvb31ln215...}, goog:chromeOptions: {debuggerAddress: localhost:55363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dd5dc9c61436a052e20034c5e502b96
+	at scripts.CarvanaTest.validateMainNavItems(CarvanaTest.java:28)
+
+validateResultTiles(scripts.CarvanaTest)  Time elapsed: 45.036 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at scripts.CarvanaTest.validateResultTiles(CarvanaTest.java:80)
+
